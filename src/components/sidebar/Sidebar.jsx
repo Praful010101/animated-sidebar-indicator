@@ -4,34 +4,46 @@ import './sidebar.scss';
 
 const sidebarNavItems = [
     {
-        display: 'Dashboard',
-        icon: <i className='bx bx-home'></i>,
+        display: 'Personal Details',
+        icon: <i className='bx bx-user'></i>,
         to: '/',
         section: ''
     },
     {
-        display: 'Getting Started',
+        display: 'Profile Summary',
         icon: <i className='bx bx-star'></i>,
         to: '/started',
         section: 'started'
     },
     {
-        display: 'Calendar',
-        icon: <i className='bx bx-calendar'></i>,
+        display: 'Experience',
+        icon: <i className='bx bx-trophy'></i>,
         to: '/calendar',
         section: 'calendar'
     },
     {
-        display: 'User',
-        icon: <i className='bx bx-user'></i>,
+        display: 'Education',
+        icon: <i className='bx bx-book-bookmark'></i>,
         to: '/user',
         section: 'user'
     },
     {
-        display: 'Orders',
-        icon: <i className='bx bx-receipt'></i>,
+        display: 'Certification',
+        icon: <i className='bx bx-award'></i>,
         to: '/order',
         section: 'order'
+    },
+    {
+        display: 'Skills',
+        icon: <i className='bx bx-plus-circle'></i>,
+        to: '/skills',
+        section: 'skills'
+    },
+    {
+        display: 'Charges and avaibility',
+        icon: <i className='bx bx-time-five'></i>,
+        to: '/charges',
+        section: 'charges'
     },
 ]
 
@@ -59,7 +71,7 @@ const Sidebar = () => {
 
     return <div className='sidebar'>
         <div className="sidebar__logo">
-            Animate
+            Acenet
         </div>
         <div ref={sidebarRef} className="sidebar__menu">
             <div
